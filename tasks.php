@@ -13,3 +13,14 @@ function repeat($array){
 repeat([1,2,3]);
 
 
+function reformat($string){
+	
+	$result = strtolower($string);
+	$result = str_replace(['a','e','i','o','u'], '', $result);
+	echo ucfirst($result);
+	
+}
+
+reformat("liMeSHArp DeveLoper TEST");
+
+
